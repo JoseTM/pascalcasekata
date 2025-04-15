@@ -32,17 +32,24 @@ describe('pascalcase should', () => {
     const expected = 'FizzBuzz';
     expect(result).toBe(expected);
   });
+  it('words delimited by space must by translated to PascalCase', ()=> {
+    const result = topascalcase('fizz buzz fizz');
+    const expected = 'FizzBuzzFizz';
+    expect(result).toBe(expected);
+  });
+  it('words delimited by hyphen must by translated to PascalCase', ()=> {
+    const result = topascalcase('fizz_buzz_fizz');
+    const expected = 'FizzBuzzFizz';
+    expect(result).toBe(expected);
+  });
+  it('words delimited by underscore must by translated to PascalCase', ()=> {
+    const result = topascalcase('fizz-buzz-fizz');
+    const expected = 'FizzBuzzFizz';
+    expect(result).toBe(expected);
+  });
+  it('translate a string with combined underscore, hyphen and space', ()=> {
+    const result = topascalcase('fizz-buzz-fizz');
+    const expected = 'FizzBuzzFizz';
+    expect(result).toBe(expected);
+  });
 });
-
-/*
-
-character space must be deleted
-character underscore must be deleted
-character hyphen must be deleted
-
-
-two words delimited by space must by translated to PascalCase
-two words delimited by hyphen must by translated to PascalCase
-two words delimited by underscore must by translated to PascalCase
-a string with combined underscore, hyphen and space must be translated
- */
