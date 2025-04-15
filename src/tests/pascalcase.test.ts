@@ -1,4 +1,3 @@
-
 import { topascalcase } from '../core/pascalcase';
 
 describe('pascalcase should', () => {
