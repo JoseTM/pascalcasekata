@@ -1,26 +1,13 @@
-# Template TypeScript
+# CamelCase kata
 ## Diseño Sostenible - Ingeniería y Artesanía del Software con TypeScript
 ![Diseño Sostenible](coverds.png)
 
-Plantilla base para practicar las katas del curso o para empezar un proyecto nuevo.
-
-Incluye:
-* TypeScript
-* Jest
-* ESLint
-* Prettier
-* Husky
-
 ## Instrucciones
-* `nvm use`
-* `npm install`
-* `npm test`
 
-Más información sobre el curso en [diseñosostenible.com](https://diseñosostenible.com).
+​	En esta *kata* se nos pide implementar una función pura que convierta un texto, cuyas  palabras están delimitadas por guiones, tanto bajos como altos y  espacios, en formato *camel case*.
 
-### ESLint
-[TypeScript ESLint Rules](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)
+​	Dentro del estilo camel case, existen dos, principalmente: el ***UpperCamelCase\***, más conocido como *PascalCase*, que se da cuando la primera letra de cada una de las palabras es mayúscula, y ***lowerCamelCase\***, que es igual que la anterior con la excepción de que la primera letra es minúscula. 
 
-### Husky hooks
-* Pre-commit: Execute npm analize (tsc + eslint --fix)
-* Pre-push: Execute test
+En nuestro caso vamos a implementar el primero, el estilo *PascalCase*.
+
+
